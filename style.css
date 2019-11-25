@@ -2,7 +2,25 @@ body {
   background: silver;
 }
 
-.choices {
-  border: 1px solid black;
+.mainBox {
   display: inline-flex;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.decisionDisp {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+
+.winnerDisp {
+  padding: 10px;
+  height: 250px;
+  width: 400px;
+}
+.choices {
+  display: inline-flex;
+  padding: 20px;
 }

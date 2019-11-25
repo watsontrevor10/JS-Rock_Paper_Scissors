@@ -6,21 +6,54 @@
 
   <body>
     <h1>JS RPS</h1>
+    <div class="mainBox">  
+      <div class="winnerDisp">        
+        <div class= "wins">
+          <h3>User Wins: </h3>
+        </div>
+        <div class= "wins">
+          <h3 id="userWins"></h3>
+        </div>
+        <div class= "wins">
+          <h3>Computer Wins: </h3>
+        </div>   
+        <div class= "wins">
+          <h3 id="compWins"></h3>
+        </div>
+        <div class= "wins">
+          <h3>Ties: </h3>
+        </div>   
+        <div class= "wins">
+          <h3 id="tie"></h3>
+        </div>
+      </div>
+      <div class="decisionDisp">
+        <div class="choiceDisplay">
+          <p id="userDecision"></p>
+          <p id="compDecision"></p>
+          <h1 id="whoWon"></h1>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
     <div class="choices" id="rock">
-      <img src="assets/rock.jpeg" alt="Rock">
+      <button>
+        <img src="assets/rock.jpeg" alt="Rock">
+      </button>
     </div>
     <div class="choices" id="paper">
-      <img src="assets/paper.png" alt="Paper">
+      <button>
+        <img src="assets/paper.png" alt="Paper">
+      </button>
     </div>
     <div class="choices" id="scissors">
-      <img src="assets/scissors.jpeg" alt="Scissors">
+      <button>
+        <img src="assets/scissors.jpeg" alt="Scissors">
+      </button>
     </div>
 
-    <p id="userDecision"></p>
-    <p id="compDecision"></p>
-
-    <h1 id="whoWon"></h1>
-
+   
     <script src="index.js"></script>
   </body>
 </html>
