@@ -1,0 +1,8 @@
+body {
+  background: silver;
+}
+
+.choices {
+  border: 1px solid black;
+  display: inline-flex;
+}
