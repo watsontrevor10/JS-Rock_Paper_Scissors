@@ -16,8 +16,8 @@ for(var i = 0; i < choices.length; i++) {
     document.getElementById("compDecision").innerHTML = "Computer Chose: " + compChoice;
     
     compare(userChoice, compChoice)
-
-    userWin = document.getElementById("userWins").innerHTML = userWin
+    
+    userWin = document.getElementById("userWins").innerHTML = userWin 
     compWin = document.getElementById("compWins").innerHTML = compWin
     tiedGame = document.getElementById("tie").innerHTML = tiedGame
   })
@@ -26,14 +26,17 @@ for(var i = 0; i < choices.length; i++) {
 var compare = function(userChoice, compChoice) {
   if (userChoice === compChoice) {
     document.getElementById("whoWon").innerHTML = "It was a tie"
+    document.getElementById("whoWon").style.color = "blue"
     tiedGame++
   } else {
     if (userChoice === "rock") {
       if (compChoice === "paper") {
         document.getElementById("whoWon").innerHTML = "Computer Wins"
+        document.getElementById("whoWon").style.color = "red"
         compWin++
       } else {
         document.getElementById("whoWon").innerHTML = "You Win"
+        document.getElementById("whoWon").style.color = "green"
         userWin++
       }
     };
@@ -41,9 +44,11 @@ var compare = function(userChoice, compChoice) {
     if (userChoice === "paper") {
       if (compChoice === "scissors") {
         document.getElementById("whoWon").innerHTML = "Computer Wins"
+        document.getElementById("whoWon").style.color = "red"
         compWin++
       } else {
         document.getElementById("whoWon").innerHTML = "You Win"
+        document.getElementById("whoWon").style.color = "green"
         userWin++
       }
     };
@@ -51,53 +56,14 @@ var compare = function(userChoice, compChoice) {
     if (userChoice === "scissors") {
       if (compChoice === "rock") {
         document.getElementById("whoWon").innerHTML = "Computer Wins"
+        document.getElementById("whoWon").style.color = "red"
         compWin++
       } else {
         document.getElementById("whoWon").innerHTML = "You Win"
+        document.getElementById("whoWon").style.color = "green"
         userWin++
       }
     };
+  }
 }
 
-}
-  
-
-// switch(userChoice == "rock") {
-//   case compChoice == "paper":
-//     document.getElementById("whoWon").innerHTML = "Computer Wins!"
-//   break;
-//   case compChoice == "scissors":
-//     document.getElementById("whoWon").innerHTML = "You Win!"
-//   break;
-//   default:
-//     document.getElementById("whoWon").innerHTML = "It is a tie!"
-// }
-
-// if (userChoice == "rock" && compChoice == "paper") {
-//   document.getElementById("whoWon").innerHTML = "Computer Wins"
-// } else if (userChoice == "rock" && compChoice == "scissors") {
-//   document.getElementById("whoWon").innerHTML = "You Win"
-// } else {
-//   document.getElementById("whoWon").innerHTML = "It was a tie"
-// }
-
-// if (userChoice == "paper" && compChoice == "scissors") {
-//   document.getElementById("whoWon").innerHTML = "Computer Wins"
-// } else if (userChoice == "paper" && compChoice == "rock") {
-//   document.getElementById("whoWon").innerHTML = "You Win"
-// } else {
-//   document.getElementById("whoWon").innerHTML = "It was a tie"
-// }
-
-// if (userChoice == "scissors" && compChoice == "rock") {
-//   document.getElementById("whoWon").innerHTML = "Computer Wins"
-// } else if (userChoice == "scissors" && compChoice == "paper") {
-//   document.getElementById("whoWon").innerHTML = "You Win"
-// } else {
-//   document.getElementById("whoWon").innerHTML = "It was a tie"
-// }
-
-
-// tasks: display user and computer choices on-screen (boxes to display images of choices)
-// Logic to see who won 
-// display winner

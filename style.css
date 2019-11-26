@@ -24,3 +24,7 @@ body {
   display: inline-flex;
   padding: 20px;
 }
+
+#resetButton {
+  color: red;
+}
